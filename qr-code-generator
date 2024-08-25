@@ -21,7 +21,6 @@ def show():
 frame = Frame(cp, bg='#f3f3f3')
 frame.pack(expand=True)
 
-#------------------ENTER THE TEXT OR URL------------------
 
 Label(frame, text='Enter the Text or URL : ', font=('Arial Black', 16),
       bg='#f3f3f3').grid(row=0, column=0, sticky='w')
@@ -29,7 +28,7 @@ Label(frame, text='Enter the Text or URL : ', font=('Arial Black', 16),
 msg = Entry(frame)
 msg.grid(row=0, column=1)
 
-#------------------ENTER THE FILE NAME------------------
+
 
 Label(frame, text='File Name(Save As) : ', font=('Arial Black', 16),
       bg='#f3f3f3').grid(row=1, column=0, sticky='w')
@@ -37,7 +36,7 @@ Label(frame, text='File Name(Save As) : ', font=('Arial Black', 16),
 save_name = Entry(frame)
 save_name.grid(row=1, column=1)
 
-#------------------BUTTONS TO SHOW OR SAVE QRCODE------------------
+
 
 btn = Button(cp, text='Show QR code', bd='5', command=show, width=15)
 btn.pack()
